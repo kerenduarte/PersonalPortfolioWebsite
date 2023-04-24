@@ -1,0 +1,52 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+h5{
+    font-family: "Courier New", serif;
+    font-size: calc(1rem + 1.5vw);
+    color: #000000;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+.accordion-button{
+    font-family: "Agency FB", serif;
+    color: #000000;
+    overflow: hidden;
+}
+
+.accordion-button:focus{
+    border-color: #F5ED2C;
+}
+
+.accordion-body{
+    font-family: "Times New Roman", serif;
+    color: #000000;
+    overflow: hidden;
+}
+
+.container-principal{
+    margin-top: 15px;
+}
+
+.accordion{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: calc(5rem + 50vw) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color:  #FFFFFF;
+    /* COR DA LETRA QUANDO ABRE O ACCODION*/
+    background-color: rgba(71, 70, 70, .2);
+    /* COR DA CAIXA QUANDO ABRE O ACORDION */
+}
+
+
+

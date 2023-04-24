@@ -1,0 +1,38 @@
+.rodape{
+    background-color: #000000;
+    position: sticky;
+    top: 100%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.rodape-item{
+    font-family: "Gill Sans MT Condensed", serif;
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 3px;
+}
+
+.logo-img{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.rodape-icons{
+    margin: 5px;
+}
+
+.nav-item.rodape-i{
+    font-size: 10px;
+    text-wrap: normal;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.nav-item.rodape-i::after{
+    height: 2px;
+
+}

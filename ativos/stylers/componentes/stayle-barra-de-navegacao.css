@@ -1,0 +1,120 @@
+/* NAVBAR */
+.navbar{
+    background-color: #000000;
+}
+
+.logo-nav{
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-brand{
+    padding-left: 10px;
+}
+
+.nav-item{
+    font-family: Stencil, serif;
+    font-size: 1rem;
+    max-font-size: 30px;
+    min-font-size: 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-item:hover,
+.nav-item:focus{
+    color: #FFFFFF;
+}
+
+.nav-item::after{
+    content: '';
+    background-color: #F5ED2C;
+    width: 0;
+    height: 2px;
+    margin: auto;
+    display: block;
+
+}
+
+.nav-item:hover::after,
+.nav-item:focus::after{
+    width: 100%;
+    transition: width 0.3s linear;
+}
+
+.navbar-toggler{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span{
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon{
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar{
+    margin-top: 0;
+}
+
+/* quando abre o navBar lateral */
+.navbar-toggler .top-bar{
+    margin-top: 0;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar{
+    margin-top: 0;
+    transform: rotate(-135deg);
+}
+
+/* quando fecha o navbar */
+.navbar-toggler.collapsed .top-bar{
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
