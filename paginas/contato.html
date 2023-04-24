@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+
+    <link href="../ativos/css/bootstrap.css" rel="stylesheet">
+    <link href="../ativos/fontawesome/css/all.css" rel="stylesheet">
+    <link href="../ativos/stylers/paginas/styles-contato.css" rel="stylesheet">
+    <link href="../ativos/stylers/componentes/stayle-barra-de-navegacao.css" rel="stylesheet">
+    <link href="../ativos/stylers/componentes/style-rodape.css" rel="stylesheet">
+
+    <link href="../ativos/stylers/componentes/header.css" rel="stylesheet">
+
+    <title>AA - Contato</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md fixed-top">
+
+        <div class="container-fluid">
+
+        <a class="navbar-brand" href="../index.html">
+            <img src="../ativos/imagens/logo/logo-aa-vetor-branco.png"
+                 alt="Logo"
+                 class="d-inline-block align-text-top logo-nav">
+        </a>
+
+        <button class="navbar-toggler collapsed d-lg-none flex-column justify-content-around"
+                type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuNavBar"
+                aria-controls="menuNavBar"
+                aria-expanded="false" aria-label="Toggler Navegação">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="menuNavBar">
+
+            <div class="navbar-nav">
+
+                <a class="nav-item" href="../../PersonalPortfolioWebsite/paginas/sobre-mim.html">Sobre Mim</a>
+                <a class="nav-item" href="../../PersonalPortfolioWebsite/paginas/portfolio.html">Portfólio</a>
+                <a class="nav-item" href="../../PersonalPortfolioWebsite/paginas/servicos.html">Serviçõs</a>
+                <a class="nav-item" href="../../PersonalPortfolioWebsite/paginas/clientes.html">Clientes</a>
+                <a class="nav-item" href="../../PersonalPortfolioWebsite/paginas/contato.html">Contato</a>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container-fluid header d-flex justify-content-center
+                align-items-center">
+        <h1>CONTATO</h1>
+    </div>
+
+    <h5>DETALHES DO CONTATO</h5>
+
+    <p class="info-2"><b style="color: red">*</b> <em>indica informações obrigatorias</em></p>
+
+    <div class="container-fluid grupo-1">
+
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <label for="validanome"
+                       class="form-label">Seu nome completo <b
+                        style="color: red">*</b></label>
+                <input type="text" class="form-control"
+                       id="validanome" required>
+                <div class="valid-feedback">
+                    Tudo certo!
+                </div>
+                <div class="invalid-feedback">
+                    Por favor, informe seu nome completo
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <label for="inputNomeEmpresa" class="form-label">Nome da empresa <b style="color: red">*</b></label>
+                <input type="text" class="form-control" id="inputNomeEmpresa" required>
+                <div id="emailHelp" class="form-text">Por favor, informe o nome da empresa.</div>
+                <div class="invalid-feedback">
+                    Por favor, informe o nome da empresa.
+                </div>
+            </div>
+            <div class="col-md-2">
+                <label for="validaConhecimento" class="form-label">Como me econtrou <b style="color: red">*</b></label>
+                <select class="form-select" id="validaConhecimento" required>
+                    <option selected disabled value="">Escolha...</option>
+                    <option>Google</option>
+                    <option>Facebook</option>
+                    <option>Instagram</option>
+                    <option>Por alguma pessoa</option>
+                    <option>Outros</option>
+                </select>
+                <div class="invalid-feedback">
+                    Por favor, escolhar uma das opções dadas.
+                </div>
+            </div>
+            <div class="col-md-5">
+                <label for="validaEmail" class="form-label">Seu Email <b style="color: red">*</b></label>
+                <input type="email" class="form-control" id="validaEmail" aria-describedby="emailHelp" required>
+                <div class="invalid-feedback">
+                    Por favor, informe seu email.
+                </div>
+            </div>
+            <div class="col-md-5">
+                <label for="inputEmailEmpresa" class="form-label">Email da empresa <b style="color: red">*</b></label>
+                <input type="email" class="form-control" id="inputEmailEmpresa" aria-describedby="emailHelp" required>
+                <div class="invalid-feedback">
+                    Por favor, informe o email da empresa.
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="inputSiteEmpresa" class="form-label">Site da empresa <b style="color: red">*</b></label>
+                <input type="text" class="form-control" id="inputSiteEmpresa" required>
+                <div class="invalid-feedback">
+                    Por favor, informe o site da empresa.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validaComentarios"
+                       class="form-label">Informaçõs sobre o motivo do contato. <b
+                        style="color: red">*</b></label>
+                <input type="text" class="form-control comentarios"
+                       id="validaComentarios" required>
+                <div class="valid-feedback">
+                    Tudo certo!
+                </div>
+                <div class="invalid-feedback">
+                    Por favor, informe o motivo de entrar em contato.
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Eu concordo em receber email para contato.
+                    </label>
+                    <div class="invalid-feedback">
+                        Você precisa concordar com o termo acima.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Emviar Formulario</button>
+            </div>
+        </form>
+
+    </div>
+
+
+    <footer class="rodape">
+        <div class="row row-cols-1">
+            <div class="col">
+                <div class="nav justify-content-end flex-nowrap">
+                    <div class="row">
+                        <a href="../../PersonalPortfolioWebsite/paginas/sobre-mim.html" class="nav-item rodape-i">Sobre Mim</a>
+                    </div>
+                    <div class="row">
+                        <a href="../../PersonalPortfolioWebsite/paginas/portfolio.html" class="nav-item rodape-i">Portfólio</a>
+                    </div>
+                    <div class="row">
+                        <a href="../../PersonalPortfolioWebsite/paginas/servicos.html" class="nav-item rodape-i">Serviços</a>
+                    </div>
+                    <div class="row">
+                        <a href="../../PersonalPortfolioWebsite/paginas/clientes.html" class="nav-item rodape-i">Clientes</a>
+                    </div>
+                    <div class="row">
+                        <a href="../../PersonalPortfolioWebsite/paginas/contato.html" class="nav-item rodape-i">Contato</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <img src="../ativos/imagens/logo/logo-aa-vetor-branco.png" class="logo-img" alt="Logo">
+            </div>
+
+            <div class="col">
+                <div class="nav justify-content-start flex-nowrap">
+                    <a href="#" class="rodape-icons"><i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i></a>
+                    <a href="#" class="rodape-icons"><i class="fa-brands fa-instagram fa-lg" style="color: #ffffff;"></i></a>
+                    <a href="#" class="rodape-icons"><i class="fa-brands fa-twitter fa-lg" style="color: #ffffff;"></i></a>
+                    <a href="#" class="rodape-icons"><i class="fa-brands fa-behance fa-lg" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../ativos/js/jquery-3.6.4.js"></script>
+    <script src="../ativos/js/bootstrap.bundle.js"></script>
+    <script src="../ativos/js/script.js"></script>
+</body>
+</html>
